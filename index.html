@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="sctipts.js" defer></script>
+</head>
+<body>
+    <dialog class="nameDialog">
+        <div class="dialog-container">
+        <div class="dialog-label">Set Players names!</div>
+        <form method="dialog">
+            <fieldset>
+            <label for="name1">Player 1 name:</label>
+            <input type="text" name="name1" id="name1" required>
+            </fieldset>
+
+            <fieldset>
+            <label for="name2">Player 2 name:</label>
+            <input type="text" name="name2" id="name2" required>
+            </fieldset>
+
+            <button type="submit" id="submitbutton">Confirm</button>
+        </form>
+        </div>
+    </dialog>
+    <div class="container">
+    <h1>Welcome to Tic-Tac-Toe!</h1>
+    <div class="gameboard">
+        <button class="gamebutton" id="00"></button>
+        <button class="gamebutton" id="10"></button>
+        <button class="gamebutton" id="20"></button>
+        <button class="gamebutton" id="01"></button>
+        <button class="gamebutton" id="11"></button>
+        <button class="gamebutton" id="21"></button>
+        <button class="gamebutton" id="02"></button>
+        <button class="gamebutton" id="12"></button>
+        <button class="gamebutton" id="22"></button>
+    </div>
+    <div class="restart-buttons">
+        <button class="restartBoard">Restart Board</button>
+        <button class="restartGame">Restart Game</button>
+    </div>
+    </div>
+    <dialog class="winDialog">
+        <div class="winContainer">
+        <div class="winMessage"></div>
+        <button class="dialog-close-button">Close</button>
+        </div>
+    </dialog>
+</body>
+</html>
